@@ -1,0 +1,6 @@
+<form action="{{ path('jc_comment_create', { 'blog_id' : comment.blog.id } ) }}" method="post"  class="blogger">
+    {{ form_widget(form) }}
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</form>

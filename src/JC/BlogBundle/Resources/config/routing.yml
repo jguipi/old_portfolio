@@ -1,0 +1,25 @@
+jc_blog_homepage:
+    path:     /blog
+    defaults: { _controller: JCBlogBundle:Default:index }
+
+jc_blog_about:
+    path:  /blog/about
+    defaults: { _controller: JCBlogBundle:Default:about }
+    requirements:
+
+jc_blog_contact:
+    path:  /blog/contact
+    defaults: { _controller: JCBlogBundle:Default:contact }
+    requirements:
+
+jc_blog_show:
+    path:  /blog/show/{id}//{slug}
+    defaults: { _controller:  JCBlogBundle:Default:show}
+    requirements:
+        id: \d+
+
+jc_comment_create:
+    path:  /comment/{blog_id}
+    defaults: { _controller: JCBlogBundle:Comment:create}
+    requirements:
+        blog_id: \d+

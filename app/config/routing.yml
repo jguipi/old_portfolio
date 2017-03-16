@@ -1,0 +1,12 @@
+jc_profile:
+    resource: "@JCProfileBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jc_blog:
+    resource: "@JCBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+

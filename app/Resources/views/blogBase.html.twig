@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}Road to became a programmer{% endblock %} J.Guipi</title>
+
+    {% block stylesheets %}
+        {% stylesheets output="css/compiled/main.css" filter='cssrewrite'
+        'css/blogScreen.css'
+        'css/contactBlog.css'
+        'css/blog.css'
+        'css/sidebar.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+<body>
+
+<section id="wrapper">
+    <header id="header">
+        <div class="top">
+            {% block navigation %}
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="{{ path('jc_blog_homepage') }}">Home</a></li>
+                        <li><a href="{{ path('jc_blog_about') }}">About</a></li>
+                        <li><a href="{{ path('jc_blog_contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+            {% endblock %}
+        </div>
+
+        <hgroup>
+            <h2>{% block blog_title %}<a href="#">Meet J.Guipi</a>{% endblock %}</h2>
+            <h3>{% block blog_tagline %}<a href="#">Road to became a programmer</a>{% endblock %}</h3>
+        </hgroup>
+    </header>
+
+    <section class="main-col">
+        {% block body %}{% endblock %}
+    </section>
+    <aside class="sidebar">
+        {% block sidebar %}{% endblock %}
+    </aside>
+
+    <div id="footer">
+        {% block footer %}
+            J. Guipi 2017 <a href="https://github.com/dsyph3r">dsyph3r</a>
+        {% endblock %}
+    </div>
+</section>
+
+{% block javascripts
+
+%}
+
+    {% javascripts output='js/compiled/core.js'
+    'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+    %}
+    <script src="{{ asset_url }}" charset="utf-8" ></script>
+
+    {% endjavascripts %}
+
+{% endblock %}
+</body>
+</html>

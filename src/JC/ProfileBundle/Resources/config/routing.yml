@@ -1,0 +1,7 @@
+jc_profile_homepage:
+    path:     /profile
+    defaults: { _controller: JCProfileBundle:Default:index }
+
+jc_profile_homepage_fr:
+    path:     /profile/fr
+    defaults: { _controller: JCProfileBundle:Default:indexFR}

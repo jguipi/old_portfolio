@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+    <!-- By Christopher Briddock http://behance.net/Chris-B-->
+    <title>Meet J.Guipi</title>
+    <meta charset="UTF-8">
+    <!-- Facebook meta tags-->
+    <meta property="og:title" content="Serenity - A Portfolio Template">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Serenity - A Portfolio Template">
+    <!-- Responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge">
+    <meta name="robots" content="index, follow">
+    <!-- Description and keywords for search engines-->
+    <meta name="description" content="This is a portfolio template, coded in HTML 5 and CSS 3!">
+    <meta name="keywords" content="Portfolio Template HTML5 CSS3 Javascript Custom">
+    <meta name="msapplication-TileColor" content="#cdcec0">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Style sheets-->
+    <!-- font link here, change to another google font if you wish!-->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" rel="stylesheet" type="text/css">
+    <!-- begin favicon stuff
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <script src="js/jquery-2.1.4.min.js"></script>-->
+
+
+    {% block stylesheets %}
+        {% stylesheets output="css/compiled/main.css" filter='cssrewrite'
+        'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
+        'css/all.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <div class="overlay-nav hidden">
+        <ul class="mobile">
+            <li><a href="/">HOME</a></li>
+        </ul>
+        <ul class="mobile">
+            <li><a href="#" class="about">ABOUT</a></li>
+        </ul>
+        <ul class="mobile">
+            <li><a href="#" class="work">PROJECT</a></li>
+        </ul>
+        <ul class="mobile">
+            <li><a href="#" class="contact-nav">CONTACT</a></li>
+        </ul>
+        <div class="close"></div>
+    </div>
+    <div class="container">
+        <div id="logo">J. Guipi</div>
+        <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+            <ul class="in">
+                <li><a href="/">HOME</a></li>
+            </ul>
+            <ul class="in">
+                <li><a href="#" class="about">ABOUT ME </a></li>
+            </ul>
+            <ul class="in">
+                <li><a href="#" class="work">WORK</a></li>
+            </ul>
+            <ul class="in">
+                <li><a href="#" class="contact-nav">CONTACT</a></li>
+            </ul>
+            <ul class="in">
+                <li><a href="{{ path('jc_profile_homepage_fr') }}" class="">FRENCH</a></li>
+            </ul>
+        </nav>
+        <h1 id="jumbotron">Web app and mobile app</h1>
+        <h2 id="supporting-header">Development</h2> <!--<a href="#" class="btn">Lorem ipsum</a>-->
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h1 class="port">About Me</h1>
+        <div class="self-pic"></div>
+        <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
+        <p class="about-para">
+            Hi, I am a student in software engineering passionate about everything related to computer science.
+            I'm passionate about programming and learning a variety of technologies, and to date, I have acquired
+            skill with a few programming language and some framework. I like to challenge myself and to surpass myself
+            in everyday life. One of my goals is to fill in the lack of knowledge by freeing up time to learn in a new subject.
+            In addition, I try to stay abreast of every new innovation and knowledge in the field of technology to keep me up to date.</p>
+        <p class="about-para">            </p>
+        <h1 class="port">Skills</h1>
+        <p class="about-para" style="text-align: center;">
+            <strong> Programming Language </strong> <br>
+            Java, PHP, HTML, CSS, Apex, Ruby on rails<br>
+            <strong>OS</strong><br>
+            Linux, Windows, Android<br>
+            <strong>Database</strong><br>
+            Doctrine ORM<br>
+            <strong>Framework</strong><br>
+            Symfony, Materialize, Twitter Bootstrap, Material Design Lite<br>
+            <strong> Version Control Repository</strong><br>
+            Git<br>
+            <strong> Plateform and others</strong><br>
+            SalesForces, Eclipse, Android Studio, php Storm, RubyMine, Welkin Suite
+        </p>
+    </div>
+</section>
+<section>
+    <!-- edit the H2 text if you need to-->
+    <h2 class="port">My Project</h2>
+    <div class="container">
+        <div class="flex">
+            <!-- change the links of the images and project title here!-->
+            <figure id="one">
+                <figcaption id="img1" class="overlay">Inventory Management Web App</figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/package.jpg') }}" alt=""></a>
+            </figure>
+            <figure id="two">
+                <figcaption id="img2" class="overlay">Dice game Framework</figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/dice.jpg') }}" alt=""></a>
+            </figure>
+            <figure id="three">
+                <figcaption id="img3" class="overlay">Blog Management</figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/blog.jpg') }}" alt=""></a>
+            </figure>
+            <figure id="four">
+                <figcaption id="img4" class="overlay">Food delivery app</figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/food.jpg') }}" alt=""></a>
+            </figure>
+            <figure id="five">
+                <figcaption id="img5" class="overlay">Task Management App</figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/chek.jpg') }}" alt=""></a>
+            </figure>
+        </div>
+    </div>
+</section>
+<section>
+    <!-- edit the H2 text if you need to-->
+    <h2 class="port">Services</h2>
+    <div class="container">
+        <div class="flex">
+            <!-- change the links of the images and project title here!-->
+            <figure id="one">
+                <figcaption id="img1" class="overlay"></figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/1-1.PNG') }}" alt=""></a>
+            </figure>
+            <figure id="two">
+                <figcaption id="img2" class="overlay"></figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/2-2.PNG') }}" alt=""></a>
+            </figure>
+            <figure id="three">
+                <figcaption id="img3" class="overlay"></figcaption><a href="" target="_blank"><img src="{{ asset('css/Images/3-3.PNG') }}" alt=""></a>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="grey">
+    <div class="container">
+        <!-- edit this h2 and paragraph text here!-->
+        <h2 class="contact">Contact Me!</h2>
+        <p class="contact">Whether it's a question or you want to talk about your latest project, feel free to reach out to me!</p><a href="mailto:juste_g@hotmail.com" class="contact-button">Email Me!</a>
+        <h2 class="contact">Or Complete the form</h2>
+        <div  style="text-align: center;">
+        {{ include('@JCProfile/Default/contact.html.twig') }}
+        </div>
+        <div class="flex">
+            <!-- <div class="social-media"><a href="#">Twitter</a><a href="#">Behance</a><a href="#">Dribbble</a><a href="#">Instagram</a></div> -->
+        </div>
+    </div>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89464.27224195928!2d-73.74796128273091!3d45.51493976082123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1489648311346" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+<footer>
+    <div class="container">
+        <p class="foot">&copy; J Guipi 2017</p>
+    </div>
+</footer>
+{% block javascripts
+
+%}
+
+    {% javascripts output='js/compiled/core.js'
+    'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+    'js/main.js'
+    %}
+    <script src="{{ asset_url }}" charset="utf-8" ></script>
+
+    {% endjavascripts %}
+
+{% endblock %}
+</body>
+</html>
