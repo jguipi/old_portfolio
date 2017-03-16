@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use JC\BlogBundle\Entity\Comment;
 use JC\BlogBundle\Form\CommentType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 
 /**
@@ -13,15 +15,32 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class CommentController extends Controller
 {
-    public function newAction($blog_id)
+    public function newAction($blog_id, Request $request)
     {
         $blog = $this->getBlog($blog_id);
 
         $comment = new Comment();
         $comment->setBlog($blog);
+        $form = $this->createFormBuilder($comment)
+            ->add('user', TextType::class)
+            ->add('comment', TextType::class)
+            ->add('save', SubmitType::class, array('label' => 'Send'))
+            ->getForm();
 
-        $form = $this->get('form.factory')->create(CommentType::class, $comment);
 
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $form->getData();
+
+            $comment = $form->getData();
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($comment);
+            $em->flush();
+
+            return $this->redirectToRoute('jc_blog_homepage');
+        }
 
         return $this->render('@JCBlog/Comment/_form.html.twig', array(
             'comment' => $comment,
@@ -29,17 +48,25 @@ class CommentController extends Controller
         ));
     }
 
-    public function createAction($blog_id)
+        public function createAction($blog_id, Request $request)
     {
         $blog = $this->getBlog($blog_id);
 
-        $comment  = new Comment();
+        $comment = new Comment();
         $comment->setBlog($blog);
-        $request = $this->getRequest();
-        $form = $this->get('form.factory')->create(CommentType::class, $comment);
-        $form->bind($request);
+        $form = $this->createFormBuilder($comment)
+            ->add('user', TextType::class)
+            ->add('comment', TextType::class)
+            ->add('save', SubmitType::class, array('label' => 'Send'))
+            ->getForm();
 
-        if ($form->isValid()) {
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $form->getData();
+
+            $comment = $form->getData();
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($comment);

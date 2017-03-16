@@ -13,7 +13,7 @@ jc_blog_contact:
     requirements:
 
 jc_blog_show:
-    path:  /blog/show/{id}//{slug}
+    path:  /blog/show/{id}/{slug}
     defaults: { _controller:  JCBlogBundle:Default:show}
     requirements:
         id: \d+

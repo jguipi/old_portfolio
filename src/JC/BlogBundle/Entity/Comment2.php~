@@ -1,0 +1,105 @@
+<?php
+
+namespace JC\BlogBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use FOS\CommentBundle\Entity\Comment as BaseComment;
+use FOS\CommentBundle\Model\VotableCommentInterface;
+
+
+/**
+ * @ORM\Entity
+ * @ORM\ChangeTrackingPolicy("DEFERRED_EXPLICIT")
+ */
+class Comment2 extends BaseComment implements VotableCommentInterface
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $name;
+    
+    /**
+     * Thread of this comment
+     *
+     * @var Thread
+     * @ORM\ManyToOne(targetEntity="JC\BlogBundle\Entity\Thread")
+     */
+    protected $thread;
+
+    /**
+     * @ORM\Column(type="integer")
+     * @var int
+     */
+    protected $score = 0;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Blog", inversedBy="comments")
+     * @ORM\JoinColumn(name="blog_id", referencedColumnName="id")
+     */
+    protected $blog;
+
+    /**
+     * Sets the score of the comment.
+     *
+     * @param integer $score
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+    }
+
+    /**
+     * Returns the current score of the comment.
+     *
+     * @return integer
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * Increments the comment score by the provided
+     * value.
+     *
+     * @param integer value
+     *
+     * @return integer The new comment score
+     */
+    public function incrementScore($by = 1)
+    {
+        $this->score += $by;
+    }
+
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Comment2
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+}

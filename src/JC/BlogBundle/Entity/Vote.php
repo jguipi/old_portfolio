@@ -3,13 +3,13 @@
 namespace JC\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use FOS\CommentBundle\Entity\Comment as BaseComment;
+use FOS\CommentBundle\Entity\Vote as BaseVote;
 
 /**
  * @ORM\Entity
  * @ORM\ChangeTrackingPolicy("DEFERRED_EXPLICIT")
  */
-class Comment2 extends BaseComment
+class Vote extends BaseVote
 {
     /**
      * @ORM\Id
@@ -19,10 +19,10 @@ class Comment2 extends BaseComment
     protected $id;
 
     /**
-     * Thread of this comment
+     * Comment of this vote
      *
-     * @var Thread
-     * @ORM\ManyToOne(targetEntity="JC\BlogBundle\Entity\Thread")
+     * @var Comment
+     * @ORM\ManyToOne(targetEntity="JC\BlogBundle\Entity\Comment2")
      */
-    protected $thread;
+    protected $comment;
 }
