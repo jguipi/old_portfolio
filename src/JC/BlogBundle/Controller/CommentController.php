@@ -24,7 +24,6 @@ class CommentController extends Controller
         $form = $this->createFormBuilder($comment)
             ->add('user', TextType::class)
             ->add('comment', TextType::class)
-            ->add('save', SubmitType::class, array('label' => 'Send'))
             ->getForm();
 
 
@@ -48,7 +47,7 @@ class CommentController extends Controller
         ));
     }
 
-        public function createAction($blog_id, Request $request)
+    public function createAction($blog_id, Request $request)
     {
         $blog = $this->getBlog($blog_id);
 

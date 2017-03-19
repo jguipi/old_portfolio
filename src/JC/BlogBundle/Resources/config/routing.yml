@@ -19,7 +19,15 @@ jc_blog_show:
         id: \d+
 
 jc_comment_create:
-    path:  /comment/{blog_id}
+    path:  /blog/show/comment/{blog_id}
     defaults: { _controller: JCBlogBundle:Comment:create}
     requirements:
         blog_id: \d+
+
+jc_tag_list:
+  path: /blog/{tag}
+  defaults: { _controller: JCBlogBundle:Default:tag}
+  requirements:
+    tag: "[^/]+"
+
+

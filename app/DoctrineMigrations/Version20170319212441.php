@@ -8,7 +8,7 @@ use Doctrine\DBAL\Schema\Schema;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-class Version20170313212818 extends AbstractMigration
+class Version20170319212441 extends AbstractMigration
 {
     /**
      * @param Schema $schema
@@ -18,7 +18,8 @@ class Version20170313212818 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('CREATE TABLE enquiry (id INT AUTO_INCREMENT NOT NULL, name LONGTEXT NOT NULL, email VARCHAR(300) NOT NULL, subject LONGTEXT NOT NULL, body LONGTEXT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB');
+        $this->addSql('DROP INDEX tags ON blog');
+        $this->addSql('CREATE FULLTEXT INDEX IDX_C01551436FBC9426 ON blog (tags)');
     }
 
     /**
@@ -29,6 +30,7 @@ class Version20170313212818 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('DROP TABLE enquiry');
+        $this->addSql('DROP INDEX idx_c01551436fbc9426 ON blog');
+        $this->addSql('CREATE FULLTEXT INDEX tags ON blog (tags)');
     }
 }

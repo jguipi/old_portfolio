@@ -55,6 +55,12 @@ class Comment
      */
     protected $updated;
 
+    /**
+     * @ORM\Column(type="integer")
+     * @var int
+     */
+    protected $score = 0;
+
     public function __construct()
     {
         $this->setCreated(new \DateTime());
@@ -234,4 +240,38 @@ class Comment
             'message' => 'You must enter a comment'
         )));
     }
+
+    /**
+     * Sets the score of the comment.
+     *
+     * @param integer $score
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+    }
+
+    /**
+     * Returns the current score of the comment.
+     *
+     * @return integer
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * Increments the comment score by the provided
+     * value.
+     *
+     * @param integer value
+     *
+     * @return integer The new comment score
+     */
+    public function incrementScore($by = 1)
+    {
+        $this->score += $by;
+    }
+
 }

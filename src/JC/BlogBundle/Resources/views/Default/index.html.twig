@@ -1,6 +1,8 @@
 {% extends 'JCBlogBundle::layout.html.twig' %}
 
 {% block body %}
+    <p>You are the : {{ count }} visitor! </p>
+{{ dump(blogs) }}
     {% for blog in blogs %}
         <article class="blog">
             <div class="date"><time datetime="{{ blog.created|date('c') }}">{{ blog.created|date('l, F j, Y') }}</time></div>

@@ -42,7 +42,7 @@ class BlogFixtures extends AbstractFixture implements OrderedFixtureInterface
         $blog3->setBlog('Lorem ipsumvehicula nunc non leo hendrerit commodo. Vestibulum vulputate mauris eget erat congue dapibus imperdiet justo scelerisque.');
         $blog3->setImage('test.jpg');
         $blog3->setAuthor('Gabriel');
-        $blog3->setTags('misdirection, magic, movie, hacking, symblog');
+        $blog3->setTags('misdirection, magic, movie, hacking, symblog, php');
         $blog3->setCreated(new \DateTime("2011-07-16 16:14:06"));
         $blog3->setUpdated($blog3->getCreated());
         $manager->persist($blog3);

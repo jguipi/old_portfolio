@@ -4,12 +4,13 @@ namespace JC\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping\Index;
 
 
 /**
  * Blog
  *
- * @ORM\Table(name="blog")
+ * @ORM\Table(name="blog", indexes={@Index(columns={"tags"},flags={"fulltext"})})
  * @ORM\Entity(repositoryClass="JC\BlogBundle\Repository\BlogRepository")
  * @ORM\HasLifecycleCallbacks()
  */

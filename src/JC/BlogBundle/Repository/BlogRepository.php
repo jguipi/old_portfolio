@@ -25,6 +25,27 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
                     ->getResult();
     }
 
+
+
+    public function getSelectecTagBlog($tag, $limit = null)
+    {
+        $selected_tag = $this->createQueryBuilder('b')
+            ->select('b, c')
+            ->leftJoin('b.comments', 'c')
+            ->addOrderBy('b.created', 'DESC')
+            ->where('b.tags = :tag')
+            ->addOrderBy('b.created', 'DESC')
+            ->setParameter('tag', $tag);
+
+        if (false === is_null($limit))
+            $selected_tag->setMaxResults($limit);
+
+        return $selected_tag  ->getQuery()
+            ->getResult();
+    }
+
+
+
     /**
      * Prend les tag dans la db dans le format CSV (comma separated values, c’est à dire que chaque valeur est séparée
      * de la précédente par une virgule) séparer et de renvoyer le résultat sous la forme d’un tableau

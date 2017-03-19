@@ -64,6 +64,12 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        # We need this the dql property to register the custom doctrine functions :
+        dql:
+            string_functions:
+                # Match agains should have the path to the MatchAgainst class created in the previous step
+                MATCH_AGAINST: JC\BlogBundle\Extensions\Doctrine\MatchAgainst
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -92,5 +98,6 @@ fos_comment:
         model:
             comment: JC\BlogBundle\Entity\Comment
             thread: JC\BlogBundle\Entity\Thread
+            vote: JC\BlogBundle\Entity\Vote
 
 

@@ -5,102 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82294ddc-0a9d-44ae-a61a-72977e830241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Portfolio.iml" afterPath="$PROJECT_DIR$/.idea/Portfolio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cake_config_setting_v0_6.xml" afterPath="$PROJECT_DIR$/.idea/cake_config_setting_v0_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/CounterFixture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Extensions/Doctrine/MatchAgainst.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/countlog.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170313212818.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Thread.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Vote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Images/photo-6.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppCache.php" afterPath="$PROJECT_DIR$/app/AppCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170313212818.php" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170313212818.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/blogBase.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/blogBase.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.htaccess" afterPath="$PROJECT_DIR$/src/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" afterPath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/DependencyInjection/Configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/DependencyInjection/JCBlogExtension.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/DependencyInjection/JCBlogExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/BlogFixtures.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/BlogFixtures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment2.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Enquiry.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Enquiry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Image.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Image.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/JCBlogBundle.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/JCBlogBundle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/CommentRepository.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/CommentRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/EnquiryRepository.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/EnquiryRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/ImageRepository.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Repository/ImageRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/DependencyInjection/Configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/DependencyInjection/JCProfileExtension.php" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/DependencyInjection/JCProfileExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/JCProfileBundle.php" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/JCProfileBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/ProfileBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/JC/ProfileBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/all.css" afterPath="$PROJECT_DIR$/web/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig" afterPath="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main.css" afterPath="$PROJECT_DIR$/web/css/compiled/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_all_2.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_all_2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_component2_1.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_component2_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_component_3.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_component_3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_font-awesome.min_1.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_font-awesome.min_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_font-awesome.min_3.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_font-awesome.min_3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_materialize_1.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_materialize_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/main_materialize_4.css" afterPath="$PROJECT_DIR$/web/css/compiled/main_materialize_4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/component.css" afterPath="$PROJECT_DIR$/web/css/component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/materialize.css" afterPath="$PROJECT_DIR$/web/css/materialize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/materialize.min.css" afterPath="$PROJECT_DIR$/web/css/materialize.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/animate.css" afterPath="$PROJECT_DIR$/web/css/webpage/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/css/webpage/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/component.css" afterPath="$PROJECT_DIR$/web/css/webpage/component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/font-awesome.min.css" afterPath="$PROJECT_DIR$/web/css/webpage/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/main.css" afterPath="$PROJECT_DIR$/web/css/webpage/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/owl.carousel.css" afterPath="$PROJECT_DIR$/web/css/webpage/owl.carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/webpage/slit-slider.css" afterPath="$PROJECT_DIR$/web/css/webpage/slit-slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/EasePack.min.js" afterPath="$PROJECT_DIR$/web/js/EasePack.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/TweenLite.min.js" afterPath="$PROJECT_DIR$/web/js/TweenLite.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core.js" afterPath="$PROJECT_DIR$/web/js/compiled/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_EasePack.min_2.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_EasePack.min_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_TweenLite.min_5.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_TweenLite.min_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_classie_4.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_classie_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_demo-1_4.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_demo-1_4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_jquery.min_1.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_jquery.min_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_materialize_2.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_materialize_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_materialize_6.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_materialize_6.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_modernizr-custom_3.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_modernizr-custom_3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/core_rAF_3.js" afterPath="$PROJECT_DIR$/web/js/compiled/core_rAF_3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/demo-1.js" afterPath="$PROJECT_DIR$/web/js/demo-1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/materialize.js" afterPath="$PROJECT_DIR$/web/js/materialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/materialize.min.js" afterPath="$PROJECT_DIR$/web/js/materialize.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/rAF.js" afterPath="$PROJECT_DIR$/web/js/rAF.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,97 +50,45 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+            <state relative-caret-position="714">
+              <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
               <folding>
                 <element signature="e#44#100#0#PHP" expanded="true" />
+                <element signature="e#808#827#1#PHP" expanded="true" />
+                <element signature="e#1001#1025#1#PHP" expanded="true" />
+                <element signature="e#2228#2247#1#PHP" expanded="true" />
+                <element signature="e#2347#2385#0#PHP" expanded="true" />
+                <element signature="e#2631#2655#1#PHP" expanded="true" />
+                <element signature="e#2876#2895#1#PHP" expanded="true" />
+                <element signature="e#2990#3028#0#PHP" expanded="true" />
+                <element signature="e#4605#4624#1#PHP" expanded="true" />
+                <element signature="e#4790#4812#1#PHP" expanded="true" />
+                <element signature="e#4894#4931#0#PHP" expanded="true" />
+                <element signature="e#5183#5202#1#PHP" expanded="true" />
+                <element signature="e#5282#5301#1#PHP" expanded="true" />
+                <element signature="e#5538#5560#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php">
+      <file leaf-file-name="Connectes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Connectes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state relative-caret-position="170">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <element signature="e#44#101#0#PHP" expanded="true" />
-                <element signature="e#1154#1172#1#PHP" expanded="true" />
-                <element signature="e#1215#1248#0#PHP" expanded="true" />
-                <element signature="e#2116#2130#0#PHP" expanded="true" />
-                <element signature="e#2369#2403#0#PHP" expanded="true" />
-                <element signature="e#2657#2676#1#PHP" expanded="true" />
+                <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/create.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/_form.html.twig">
+      <file leaf-file-name="Blog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -214,13 +97,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/contact.html.twig">
+      <file leaf-file-name="ConnectesRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/ConnectesRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
-                <element signature="e#12#36#0#Twig" expanded="false" />
+                <element signature="e#595#619#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchAgainst.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Extensions/Doctrine/MatchAgainst.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#53#82#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appDevDebugProjectContainer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="2944" column="22" lean-forward="false" selection-start-line="2944" selection-start-column="22" selection-end-line="2944" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryBuilder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="1069" column="20" lean-forward="false" selection-start-line="1069" selection-start-column="20" selection-end-line="1069" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+              <folding>
+                <element signature="e#674#686#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -230,62 +177,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ArrayCollection</find>
-      <find>slug</find>
-      <find>js</find>
-      <find>{{ asset([</find>
-      <find>}}</find>
-      <find>'}}</find>
-      <find>icon</find>
-      <find>path(</find>
-      <find>cross</find>
-      <find>images</find>
-      <find>image</find>
-      <find>css/i</find>
-      <find>heade</find>
-      <find>pro</find>
-      <find>prof</find>
-      <find>header-img-precomp2.png</find>
-      <find>profile</find>
-      <find>supporting-header</find>
-      <find>dice</find>
-      <find>sendEmail</find>
-      <find>font</find>
-      <find>bootstrap</find>
       <find>contact</find>
       <find>EnquiryType</find>
       <find>form_enctype</find>
       <find>loadValidatorMetadata</find>
       <find>transl</find>
-      <find>comment</find>
       <find>create</find>
       <find>createAction</find>
+      <find>form</find>
+      <find>arti</find>
+      <find>$created</find>
+      <find>doct</find>
+      <find>return inte</find>
+      <find>count</find>
+      <find>find</find>
+      <find>$comments</find>
+      <find>try</find>
+      <find>sendEmail</find>
+      <find>&quot;</find>
+      <find>DebugBundle</find>
+      <find>ip</find>
+      <find>comments</find>
+      <find>comment</find>
+      <find>tags</find>
+      <find>nul</find>
+      <find>nullable=true</find>
+      <find>tag</find>
+      <find>side</find>
+      <find>orm</find>
+      <find>searchterm</find>
+      <find>nullable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/blogScreen.css" />
-        <option value="$PROJECT_DIR$/web/css/blog.css" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/create.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php" />
-        <option value="$PROJECT_DIR$/web/css/sidebar.css" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/CommentRepository.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Twig/Extensions/JCBlogExtension.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Twig/AppExtension.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Image.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/BlogFixtures.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Enquiry.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Form/EnquiryType.php" />
         <option value="$PROJECT_DIR$/web/css/profile.css" />
@@ -301,24 +235,40 @@
         <option value="$PROJECT_DIR$/src/JC/ProfileBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/contact.html.twig" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/_form.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/blogBase.html.twig" />
         <option value="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/indexFR.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/_form.html.twig" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Thread.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/show.html.twig" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/CommentFixtures.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment3.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment2.php" />
-        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/CommentRepository.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Vote.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Visitor.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/blogBase.html.twig" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/Count.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/CounterFixture.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/CounterRepository.php" />
         <option value="$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/Connectes.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/ConnectesRepository.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/tagFilter.html.twig" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/BlogFixtures.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Connectes.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Extensions/Doctrine/MatchAgainst.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php" />
+        <option value="$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php" />
       </list>
     </option>
   </component>
@@ -330,10 +280,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="1273" />
+    <option name="width" value="1294" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -350,8 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,11 +353,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,11 +433,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,105 +459,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Extensions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Comment" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
+              <option name="myItemId" value="Doctrine" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,88 +503,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DependencyInjection" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portfolio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -762,8 +525,50 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -774,19 +579,19 @@
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css\Images" />
-      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\js" />
-      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css" />
-      <recent name="C:\xampp\htdocs\my_project\Portfolio\src\AppBundle" />
-      <recent name="C:\xampp\htdocs\my_project\Portfolio\src\JC\BlogBundle\Twig" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css\Images" />
       <recent name="C:\xampp\htdocs\my_project\Portfolio\web\js\webpage" />
       <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css\Images\webpage" />
       <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css\webpage" />
       <recent name="C:\xampp\htdocs\my_project\Portfolio\src\JC\BlogBundle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\my_project\Portfolio\src\JC\BlogBundle\Resources\views\Default" />
+      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css\Images" />
+      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\js" />
+      <recent name="C:\xampp\htdocs\my_project\Portfolio\web\css" />
+      <recent name="C:\xampp\htdocs\my_project\Portfolio\src\AppBundle" />
     </key>
   </component>
   <component name="RunManager">
@@ -875,21 +680,27 @@
       <workItem from="1489651645874" duration="248000" />
       <workItem from="1489652002445" duration="197000" />
       <workItem from="1489695584924" duration="2333000" />
-      <workItem from="1489705449470" duration="2349000" />
+      <workItem from="1489705449470" duration="3799000" />
+      <workItem from="1489721129597" duration="2973000" />
+      <workItem from="1489724291133" duration="351000" />
+      <workItem from="1489724838682" duration="6051000" />
+      <workItem from="1489774299100" duration="27439000" />
+      <workItem from="1489861209507" duration="25524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118645000" />
+    <option name="totallyTimeSpent" value="182433000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="1273" y="0" width="1294" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21596244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37461618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -898,10 +709,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286004" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -914,48 +724,158 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/Images/profile-pic2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/JCBlogBundle.php">
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="310">
+          <caret line="176" column="20" lean-forward="false" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/date_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="301">
+          <caret line="486" column="20" lean-forward="false" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        <state relative-caret-position="319">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="49" lean-forward="false" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="67" />
           <folding>
-            <element signature="e#40#72#0#PHP" expanded="false" />
+            <element signature="e#7#47#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+        <state relative-caret-position="1219">
+          <caret line="847" column="23" lean-forward="false" selection-start-line="847" selection-start-column="21" selection-end-line="847" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20170313212818.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/1-1.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/11-1.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/22-2.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/blog.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/chek.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/cross.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/deco.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/demo-1-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/dice.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/food.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/header-img-precomp2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/header-img-precomp.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/package.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/Images/photo-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/photo-3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/photo-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/photo-6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/Images/profile-pic2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -965,87 +885,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/Images/1-1.PNG">
+    <entry file="file://$PROJECT_DIR$/web/css/Images/test.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/Images/2-2.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="920" column="5" lean-forward="false" selection-start-line="920" selection-start-column="5" selection-end-line="920" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Form/ContactType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Enquiry.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/EnquiryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1053,202 +898,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Form/EnquiryType.php" />
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/contact.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/ImageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/CommentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/tagFilter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="76" />
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/layout.html.twig">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="328" column="16" lean-forward="false" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/blogBase.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="112" column="19" lean-forward="false" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Resources/views/Default/indexFR.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="112" column="22" lean-forward="false" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#3996#4015#0#Twig" expanded="false" />
+            <element signature="e#12#42#0#Twig" expanded="false" />
+            <element signature="e#808#844#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/_form.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/BlogFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/DataFixtures/ORM/CommentFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="124">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Form.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Image.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1962">
-          <caret line="506" column="26" lean-forward="true" selection-start-line="506" selection-start-column="26" selection-end-line="506" selection-end-column="26" />
+        <state relative-caret-position="481">
+          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/ProfileBundle/Form/ContactFRType.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Enquiry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="91" column="72" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#42#0#Twig" expanded="false" />
+            <element signature="e#684#696#0#Twig" expanded="false" />
+            <element signature="e#870#882#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Extension/RoutingExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#674#686#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <folding>
+            <element signature="e#44#100#0#PHP" expanded="true" />
+            <element signature="e#808#827#1#PHP" expanded="true" />
+            <element signature="e#1001#1025#1#PHP" expanded="true" />
+            <element signature="e#2228#2247#1#PHP" expanded="true" />
+            <element signature="e#2347#2385#0#PHP" expanded="true" />
+            <element signature="e#2631#2655#1#PHP" expanded="true" />
+            <element signature="e#2876#2895#1#PHP" expanded="true" />
+            <element signature="e#2990#3028#0#PHP" expanded="true" />
+            <element signature="e#4605#4624#1#PHP" expanded="true" />
+            <element signature="e#4790#4812#1#PHP" expanded="true" />
+            <element signature="e#4894#4931#0#PHP" expanded="true" />
+            <element signature="e#5183#5202#1#PHP" expanded="true" />
+            <element signature="e#5282#5301#1#PHP" expanded="true" />
+            <element signature="e#5538#5560#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="1069" column="20" lean-forward="false" selection-start-line="1069" selection-start-column="20" selection-end-line="1069" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+        <state relative-caret-position="519">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="194">
+          <caret line="2944" column="22" lean-forward="false" selection-start-line="2944" selection-start-column="22" selection-end-line="2944" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Thread.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Extensions/Doctrine/MatchAgainst.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <element signature="e#84#116#0#PHP" expanded="true" />
+            <element signature="e#53#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Comment2.php">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Connectes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Form/CommentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#36#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/_form.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Entity/Blog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -1256,52 +1094,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Comment/create.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/ConnectesRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
-            <element signature="e#44#100#0#PHP" expanded="true" />
+            <element signature="e#595#619#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Resources/views/Default/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Repository/BlogRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="350">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JC/BlogBundle/Controller/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="true" />
-            <element signature="e#1154#1172#1#PHP" expanded="true" />
-            <element signature="e#1215#1248#0#PHP" expanded="true" />
-            <element signature="e#2116#2130#0#PHP" expanded="true" />
-            <element signature="e#2369#2403#0#PHP" expanded="true" />
-            <element signature="e#2657#2676#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
