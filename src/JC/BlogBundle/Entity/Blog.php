@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping\Index;
 /**
  * Blog
  *
- * @ORM\Table(name="blog", indexes={@Index(columns={"tags"},flags={"fulltext"})})
+ * @ORM\Table(name="blog")
  * @ORM\Entity(repositoryClass="JC\BlogBundle\Repository\BlogRepository")
  * @ORM\HasLifecycleCallbacks()
  */
@@ -46,10 +46,12 @@ class Blog
      */
     protected $image;
 
+
     /**
-     * @ORM\Column(type="text")
+     * @ORM\OneToMany(targetEntity="JC\BlogBundle\Entity\Tagss", mappedBy="blog")
+     * @ORM\JoinColumn(nullable=true)
      */
-    protected $tags;
+    protected $tagss;
 
     /**
      * @ORM\OneToMany(targetEntity="Comment", mappedBy="blog")
@@ -212,29 +214,7 @@ class Blog
         return $this->image;
     }
 
-    /**
-     * Set tags
-     *
-     * @param string $tags
-     *
-     * @return Blog
-     */
-    public function setTags($tags)
-    {
-        $this->tags = $tags;
 
-        return $this;
-    }
-
-    /**
-     * Get tags
-     *
-     * @return string
-     */
-    public function getTags()
-    {
-        return $this->tags;
-    }
 
     /**
      * Set created
@@ -349,5 +329,40 @@ class Blog
         }
 
         return $text;
+    }
+
+
+    /**
+     * Add tagss
+     *
+     * @param \JC\BlogBundle\Entity\Tagss $tagss
+     *
+     * @return Blog
+     */
+    public function addTagss(\JC\BlogBundle\Entity\Tagss $tagss)
+    {
+        $this->tagss[] = $tagss;
+
+        return $this;
+    }
+
+    /**
+     * Remove tagss
+     *
+     * @param \JC\BlogBundle\Entity\Tagss $tagss
+     */
+    public function removeTagss(\JC\BlogBundle\Entity\Tagss $tagss)
+    {
+        $this->tagss->removeElement($tagss);
+    }
+
+    /**
+     * Get tagss
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTagss()
+    {
+        return $this->tagss;
     }
 }

@@ -50,6 +50,13 @@
     {% endblock %}
 </head>
 <body>
+{% for flashMessage in app.session.flashbag.get('notice') %}
+
+    <div class="alert alert-success">
+        {{ flashMessage }}
+    </div>
+
+{% endfor %}
 <header>
     <div class="overlay-nav hidden">
         <ul class="mobile">

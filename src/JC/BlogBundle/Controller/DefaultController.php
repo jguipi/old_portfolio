@@ -2,6 +2,7 @@
 
 namespace JC\BlogBundle\Controller;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -13,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use JC\BlogBundle\Entity\Connectes;
 use Symfony\Component\Validator\Constraints\Date;
+use Symfony\Component\PropertyAccess\PropertyAccess;
+
 
 class DefaultController extends Controller
 {
@@ -71,10 +74,9 @@ class DefaultController extends Controller
 
         $client_number_int = count($client_number);
 
-        $blogs2 = $em->getRepository('JCBlogBundle:Blog')
-            ->getSelectecTagBlog('nounou');
 
-        dump($blogs2);
+
+
 
         return $this->render('JCBlogBundle:Default:index.html.twig',array(
             'blogs' =>$blogs,
@@ -84,6 +86,7 @@ class DefaultController extends Controller
 
     }
 
+
     public function tagAction($tag){
 
         $repository = $this ->getDoctrine()
@@ -91,22 +94,48 @@ class DefaultController extends Controller
 
         $client_number = $repository
             ->findAll();
-
         $client_number_int = count($client_number);
 
-        $em = $this ->getDoctrine()
-            ->getManager();
+        $em = $this->getDoctrine()->getManager();
+
+
+        //array de tous les tagg avec la bonne value dedans
+        $test = $em->getRepository('JCBlogBundle:Tagss')->findBy(array('value' => $tag));
+
+        //array qui contien tout les blog id
+        $blog_id_by_tag[] = new ArrayCollection();
+
+        //stockage de tous les blog id relier au value dans une variable
+        for ($x = 0; $x < count($test); $x++) {
+            $blog_id_by_tag[$x] = $test[$x]->getBlogId();
+        }
+
 
         $blogs = $em->getRepository('JCBlogBundle:Blog')
-            ->getSelectecTagBlog($tag);
-
-        dump($blogs);
+            ->getSelectedBlog($blog_id_by_tag);
 
         return $this->render('JCBlogBundle:Default:index.html.twig', array(
             'blogs' => $blogs,
-            'count' => $client_number_int
+            'tag' => $tag,
+            'count' => $client_number_int,
+            'test' => $test
         ));
     }
+
+    // montre la liste des tag dans la page principal
+    public function tagListAction($blog_id){
+        $em = $this->getDoctrine()->getManager();
+        $tags = $em ->getRepository('JCBlogBundle:Tagss')->getBlogTag($blog_id);
+
+
+        return $this->render('@JCBlog/Default/tag_list.html.twig', array(
+            'tags' => $tags
+        ));
+    }
+
+
+
+
 
     public function aboutAction()
     {
@@ -139,6 +168,11 @@ class DefaultController extends Controller
                 }else{
                     // An error ocurred, handle
                     var_dump("An error happen! Wasn't able to send the mail.");
+
+                         $this->get('session')->getFlashBag()->add(
+                             'notice',
+                             'An error happen! Wasn\'t able to send the mail!'
+                         );
                 }
             }
         }
@@ -177,8 +211,11 @@ class DefaultController extends Controller
         $em = $this ->getDoctrine()
                     ->getManager();
 
-        $tags = $em ->getRepository('JCBlogBundle:Blog')
-                    ->getTags();
+        //$tags = $em ->getRepository('JCBlogBundle:Blog')
+           //         ->getTags();
+
+        $tags = $em ->getRepository('JCBlogBundle:Tagss')
+            ->getAllTag();
 
         $tagWeights = $em   ->getRepository('JCBlogBundle:Blog')
                             ->getTagWeights($tags);

@@ -32,6 +32,10 @@ class DefaultController extends Controller
                 }else{
                     // An error ocurred, handle
                     var_dump("An error happen! Wasn't able to send the mail.");
+                    $this->get('session')->getFlashBag()->add(
+                        'notice',
+                        'An error happen! Wasn\'t able to send the mail!'
+                    );
                 }
             }
         }

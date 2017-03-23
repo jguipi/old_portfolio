@@ -30,4 +30,3 @@ jc_tag_list:
   requirements:
     tag: "[^/]+"
 
-

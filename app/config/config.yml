@@ -68,7 +68,7 @@ doctrine:
         dql:
             string_functions:
                 # Match agains should have the path to the MatchAgainst class created in the previous step
-                MATCH_AGAINST: JC\BlogBundle\Extensions\Doctrine\MatchAgainst
+                MATCH_AGAINST: JC\BlogBundle\Extensions\Doctrine\MatchAgainstFunction
 
 
 # Swiftmailer Configuration
@@ -80,7 +80,6 @@ swiftmailer:
     spool:     { type: memory }
 
 assetic:
-    bundles: [ "FOSCommentBundle" ]
     debug:          '%kernel.debug%'
     use_controller: '%kernel.debug%'
     filters:
@@ -99,5 +98,7 @@ fos_comment:
             comment: JC\BlogBundle\Entity\Comment
             thread: JC\BlogBundle\Entity\Thread
             vote: JC\BlogBundle\Entity\Vote
+
+
 
 

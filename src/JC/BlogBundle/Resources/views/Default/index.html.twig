@@ -2,7 +2,7 @@
 
 {% block body %}
     <p>You are the : {{ count }} visitor! </p>
-{{ dump(blogs) }}
+
     {% for blog in blogs %}
         <article class="blog">
             <div class="date"><time datetime="{{ blog.created|date('c') }}">{{ blog.created|date('l, F j, Y') }}</time></div>
@@ -19,7 +19,7 @@
             <footer class="meta">
                 <p>Comments: <a href="{{ path('jc_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}#comments">{{ blog.comments|length }}</a></p>
                 <p>Posted by <span class="highlight">{{ blog.author }}</span> at {{ blog.created|date('h:iA') }}</p>
-                <p>Tags: <span class="highlight">{{ blog.tags }}</span></p>
+                <p>Tags: <span class="highlight">{{  render(controller( 'JCBlogBundle:Default:tagList', { 'blog_id': blog.id } )) }}</span></p>
             </footer>
         </article>
     {% else %}

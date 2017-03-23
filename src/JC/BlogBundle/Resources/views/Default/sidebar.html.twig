@@ -3,7 +3,7 @@
         <h3>Tag Cloud</h3>
     </header>
     <p class="tags">
-        {% for tag, weight in tags %}
+        {% for tag, weight in tags  %}
         <a href="{{ path('jc_tag_list', { 'tag': tag }) }}">
         <span  class="weight-{{ weight }}">{{ tag }}</span>
         </a>

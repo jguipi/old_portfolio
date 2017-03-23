@@ -8,7 +8,7 @@ use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 /**
  * "MATCH_AGAINST" "(" {StateFieldPathExpression ","}* InParameter {Literal}? ")"
  */
-class MatchAgainst extends FunctionNode {
+class MatchAgainstFunction  extends FunctionNode {
 
     public $columns = array();
     public $needle;

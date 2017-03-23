@@ -1,0 +1,5 @@
+{% for tag in tags %}
+
+<a href="{{ path('jc_tag_list', { 'tag': tag.value }   ) }}"> {{ tag.value }}</a>
+
+{% endfor %}

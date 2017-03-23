@@ -3,6 +3,13 @@
 {% block title %}Contact{% endblock%}
 
 {% block body %}
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+
+        <div class="alert alert-success">
+            {{ flashMessage }}
+        </div>
+
+    {% endfor %}
     <header>
         <h1>Contact J.Guipi</h1>
     </header>

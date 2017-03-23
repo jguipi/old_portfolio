@@ -25,14 +25,36 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
                     ->getResult();
     }
 
+    /**
+     * retourne la liste des article qui un un id voulu
+     * @param $blog_id
+     * @param null $limit
+     * @return array
+     */
+    public function getSelectedBlog($blog_id, $limit = null)
+    {
+        $qb = $this->createQueryBuilder('b')
+            ->select('b, c')
+            ->where('b.id IN(:blog_id)')
+            ->leftJoin('b.comments', 'c')
+            ->setParameter('blog_id', $blog_id )
+            ->addOrderBy('b.created', 'DESC');
+
+        if (false === is_null($limit))
+            $qb->setMaxResults($limit);
+
+        return $qb  ->getQuery()
+            ->getResult();
+    }
+
 
 
     public function getSelectecTagBlog($tag, $limit = null)
     {
+
         $selected_tag = $this->createQueryBuilder('b')
             ->select('b, c')
             ->leftJoin('b.comments', 'c')
-            ->addOrderBy('b.created', 'DESC')
             ->where('b.tags = :tag')
             ->addOrderBy('b.created', 'DESC')
             ->setParameter('tag', $tag);
@@ -46,32 +68,6 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
 
 
 
-    /**
-     * Prend les tag dans la db dans le format CSV (comma separated values, c’est à dire que chaque valeur est séparée
-     * de la précédente par une virgule) séparer et de renvoyer le résultat sous la forme d’un tableau
-     *
-     * @return array
-     */
-    public function getTags()
-    {
-        $blogTags = $this->createQueryBuilder('b')
-            ->select('b.tags')
-            ->getQuery()
-            ->getResult();
-
-        $tags = array();
-        foreach ($blogTags as $blogTag)
-        {
-            $tags = array_merge(explode(",", $blogTag['tags']), $tags);
-        }
-
-        foreach ($tags as &$tag)
-        {
-            $tag = trim($tag);
-        }
-
-        return $tags;
-    }
 
     /**
      * se sert ensuite du tableau de tafs pour calculer le poids (weight) de chaque tag à partir de son nombre

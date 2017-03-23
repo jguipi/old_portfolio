@@ -4,13 +4,13 @@ namespace JC\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
-use JC\BlogBundle\Entity\Image;
+use Doctrine\ORM\Mapping\Index;
 
 
 /**
  * Blog
  *
- * @ORM\Table(name="blog")
+ * @ORM\Table(name="blog", indexes={@Index(columns={"tags"},flags={"fulltext"})})
  * @ORM\Entity(repositoryClass="JC\BlogBundle\Repository\BlogRepository")
  * @ORM\HasLifecycleCallbacks()
  */
@@ -42,16 +42,20 @@ class Blog
     protected $blog;
 
     /**
-     * @ORM\OneToOne(targetEntity="JC\BlogBundle\Entity\Image", cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\Column(type="string", length=300)
      */
-
-    private $image;
+    protected $image;
 
     /**
      * @ORM\Column(type="text")
      */
     protected $tags;
+
+    /**
+     * @ORM\OneToMany(targetEntity="JC\BlogBundle\Entity\Tagss", mappedBy="blog")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    protected $tagss;
 
     /**
      * @ORM\OneToMany(targetEntity="Comment", mappedBy="blog")
@@ -123,8 +127,6 @@ class Blog
     public function setTitle($title)
     {
         $this->title = $title;
-
-        $this->setSlug($this->title);
 
         return $this;
     }
@@ -199,7 +201,22 @@ class Blog
      *
      * @return Blog
      */
+    public function setImage($image)
+    {
+        $this->image = $image;
 
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
 
     /**
      * Set tags
@@ -297,7 +314,7 @@ class Blog
      */
     public function setSlug($slug)
     {
-        $this->slug = $this->slugify($slug);
+        $this->slug = $slug;
 
         return $this;
     }
@@ -338,5 +355,29 @@ class Blog
         }
 
         return $text;
+    }
+
+    /**
+     * Set tagsList
+     *
+     * @param \JC\BlogBundle\Entity\Tagss $tagsList
+     *
+     * @return Blog
+     */
+    public function setTagsList(\JC\BlogBundle\Entity\Tagss $tagsList = null)
+    {
+        $this->tags_list = $tagsList;
+
+        return $this;
+    }
+
+    /**
+     * Get tagsList
+     *
+     * @return \JC\BlogBundle\Entity\Tagss
+     */
+    public function getTagsList()
+    {
+        return $this->tagss;
     }
 }
