@@ -30,3 +30,7 @@ jc_tag_list:
   requirements:
     tag: "[^/]+"
 
+jc_new_blog:
+  path: /blog/write/newArticle
+  defaults: { _controller: JCBlogBundle:Article:newArticle}
+  requirements:

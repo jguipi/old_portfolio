@@ -288,7 +288,8 @@ class Blog
      */
     public function setSlug($slug)
     {
-        $this->slug = $slug;
+        $slug2 = $this ->slugify($slug);
+        $this->slug = $slug2;
 
         return $this;
     }

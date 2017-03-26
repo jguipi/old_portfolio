@@ -16,3 +16,4 @@ _main:
 coresphere_console:
     resource: .
     type: extra
+

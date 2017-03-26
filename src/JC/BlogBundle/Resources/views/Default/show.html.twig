@@ -10,7 +10,7 @@
         </header>
         <img src="{{ asset(['css/Images/', blog.image]|join) }}" alt="{{ blog.title }} image not found" class="large" />
         <div>
-            <p>{{ blog.blog }}</p>
+            <p>{{ blog.blog |raw }}</p>
         </div>
     </article>
 

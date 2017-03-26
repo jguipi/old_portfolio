@@ -15,6 +15,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use JC\BlogBundle\Entity\Connectes;
 use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\PropertyAccess\PropertyAccess;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 
 class DefaultController extends Controller
@@ -35,14 +36,18 @@ class DefaultController extends Controller
                             ->getRepository('JCBlogBundle:Connectes');
 
         $visitor_array = $repository
-            ->findBy(array('ip' => $ip));
+            ->findBy(array('ip' => $ip), array('timestamp' => 'DESC'));
 
         $date_time = new \DateTime();
         $time_zone = new \DateTimeZone('America/Toronto');
         $date_time -> setTimezone($time_zone);
 
 
-        if ($visitor_array = 0 || $visitor_array == 0 || is_null( $visitor_array ) || $visitor_array == null){
+        $diff = date_diff($visitor_array[0] ->getTimestamp() , $date_time) ->format('%a');
+
+var_dump($diff);
+
+        if ($visitor_array = 0 || $visitor_array == 0 || is_null( $visitor_array ) || $visitor_array == null || $diff >= 5 ){
 
             $country = $this-> ip_info($ip, 'Country');
             $connectes = new Connectes();
@@ -57,7 +62,7 @@ class DefaultController extends Controller
         }
         else{
             $visitor_id = $repository
-                ->findOneBy(array('ip' => $ip))->getId();
+                ->findOneBy(array('ip' => $ip), array('timestamp' => 'ASC'))->getId();
 
 
             $country = $this-> ip_info($ip, 'Country');
@@ -198,6 +203,7 @@ class DefaultController extends Controller
         $comments = $em->getRepository('JCBlogBundle:Comment')
             ->getCommentsForBlog($blog->getId());
 
+
         return $this->render('JCBlogBundle:Default:show.html.twig', array(
             'blog'      => $blog,
             'comments'  => $comments
@@ -325,4 +331,6 @@ class DefaultController extends Controller
         }
         return $output;
     }
+
+
 }

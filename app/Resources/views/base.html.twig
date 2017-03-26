@@ -5,7 +5,7 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
         {% block stylesheets %}
-            {% stylesheets output="css/compiled/main.css" filter='cssrewrite'
+            {% stylesheets output="css/compiled/main.css" filter='cssrewrite, ?scssphp'
             'css/normalize.css'
             'css/demo.css'
             'css/component.css'
@@ -19,11 +19,9 @@
         {% block body %}
 
         {% endblock %}
-        {% block javascripts
+        {% block javascripts%}
 
-        %}
-
-            {% javascripts output='js/compiled/core.js'
+            {% javascripts filter='jsqueeze' output='js/compiled/core.js'
             'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
             'js/EasePack.min.js'
             'js/rAF.js'

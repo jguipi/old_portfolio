@@ -8,6 +8,7 @@ use JC\BlogBundle\Form\CommentType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 
 /**
@@ -23,7 +24,7 @@ class CommentController extends Controller
         $comment->setBlog($blog);
         $form = $this->createFormBuilder($comment)
             ->add('user', TextType::class)
-            ->add('comment', TextType::class)
+            ->add('comment', TextareaType::class)
             ->getForm();
 
 

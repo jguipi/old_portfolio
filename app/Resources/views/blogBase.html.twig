@@ -5,7 +5,7 @@
     <title>{% block title %}Road to became a programmer{% endblock %} J.Guipi</title>
 
     {% block stylesheets %}
-        {% stylesheets output="css/compiled/main.css" filter='cssrewrite'
+        {% stylesheets output="css/compiled/main.css" filter='cssrewrite, ?scssphp'
         'css/blogScreen.css'
         'css/contactBlog.css'
         'css/blog.css'
@@ -23,6 +23,9 @@
             {% block navigation %}
                 <nav>
                     <ul class="navigation">
+                        {% if app.user %}
+                            <li><a href="{{ path('jc_new_blog') }}">Write an Article</a></li>
+                        {% endif %}
                         <li><a href="{{ path('jc_blog_homepage') }}">Home</a></li>
                         <li><a href="{{ path('jc_blog_about') }}">About</a></li>
                         <li><a href="{{ path('jc_blog_contact') }}">Contact</a></li>
