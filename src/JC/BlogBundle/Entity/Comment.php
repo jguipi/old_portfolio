@@ -63,8 +63,12 @@ class Comment
 
     public function __construct()
     {
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
+        $timeZone  = new \DateTimeZone('America/Toronto');
+        $dateTime = new \DateTime();
+        $dateTime ->setTimezone($timeZone);
+
+        $this->setCreated($dateTime);
+        $this->setUpdated($dateTime);
 
         $this->setApproved(true);
     }
@@ -84,7 +88,11 @@ class Comment
      */
     public function setUpdatedValue()
     {
-        $this->setUpdated(new \DateTime());
+        $timeZone  = new \DateTimeZone('America/Toronto');
+        $dateTime = new \DateTime();
+        $dateTime ->setTimezone($timeZone);
+
+        $this->setUpdated($dateTime);
     }
 
     /**

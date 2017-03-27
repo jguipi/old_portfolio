@@ -66,7 +66,26 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
             ->getResult();
     }
 
+    public function getTags()
+    {
+        $blogTags = $this->createQueryBuilder('b')
+            ->select('b.tag')
+            ->getQuery()
+            ->getResult();
 
+        $tags = array();
+        foreach ($blogTags as $blogTag)
+        {
+            $tags = array_merge(explode(",", $blogTag['tags']), $tags);
+        }
+
+        foreach ($tags as &$tag)
+        {
+            $tag = trim($tag);
+        }
+
+        return $tags;
+    }
 
 
     /**

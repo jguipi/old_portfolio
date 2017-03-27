@@ -24,7 +24,7 @@ class ArticleController extends Controller
     public function newArticleAction(Request $request){
 
         $em = $this ->getDoctrine()
-            ->getManager();
+                ->getManager();
 
 
         $blog = new Blog();
@@ -38,11 +38,27 @@ class ArticleController extends Controller
         if ($blog_form->isSubmitted() && $blog_form->isValid()) {
             $blog_name = $blog_form->get('title')->getData();
             $blog ->setSlug($blog_name);
+
             $blog = $blog_form->getData();
 
 
 
+            $blog_tag = $blog_form->get('tag')->getData();
+
+            $tags = array();
+
+            $tags = array_merge(explode(",", $blog_tag), $tags);
+
+
             $em->persist($blog);
+            for( $x = 0; $x < count($tags); $x++)  {
+                $tag = new Tagss();
+                $tag ->setValue($tags[$x]);
+                $tag ->setBlogId($blog);
+                $em->persist($tag);
+            }
+
+
             $em->flush();
 
             return $this->redirectToRoute('jc_blog_homepage');

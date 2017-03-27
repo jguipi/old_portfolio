@@ -18,6 +18,11 @@
     {{ form_widget(form.image) }}
 </div>
 <div>
+    {{ form_label(form.tag) }}
+    {{ form_errors(form.tag) }}
+    {{ form_widget(form.tag) }}
+</div>
+<div>
     {{ form_label(form.blog) }}
     {{ form_errors(form.blog) }}
     {{ form_widget(form.blog) }}

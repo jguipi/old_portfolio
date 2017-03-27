@@ -23,29 +23,30 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
 
-        $em = $this ->getDoctrine()
-                    ->getManager();
+        $em = $this->getDoctrine()
+            ->getManager();
 
         $blogs = $em->getRepository('JCBlogBundle:Blog')
-                    ->getLatestBlogs();
+            ->getLatestBlogs();
 
 
-        $ip = $request -> getClientIp();
+        $ip = $request->getClientIp();
 
-        $repository = $this ->getDoctrine()
-                            ->getRepository('JCBlogBundle:Connectes');
+        $repository = $this->getDoctrine()
+            ->getRepository('JCBlogBundle:Connectes');
 
         $visitor_array = $repository
             ->findBy(array('ip' => $ip), array('timestamp' => 'DESC'));
 
         $date_time = new \DateTime();
         $time_zone = new \DateTimeZone('America/Toronto');
-        $date_time -> setTimezone($time_zone);
+        $date_time->setTimezone($time_zone);
 
+        if ($visitor_array != null) {
 
-        $diff = date_diff($visitor_array[0] ->getTimestamp() , $date_time) ->format('%a');
+        $diff = date_diff($visitor_array[0]->getTimestamp(), $date_time)->format('%a');
 
-var_dump($diff);
+        }
 
         if ($visitor_array = 0 || $visitor_array == 0 || is_null( $visitor_array ) || $visitor_array == null || $diff >= 5 ){
 

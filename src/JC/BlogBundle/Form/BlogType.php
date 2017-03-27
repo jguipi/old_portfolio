@@ -19,8 +19,9 @@ class BlogType extends AbstractType
     {
         $builder->add('title', TextType::class)
                 ->add('author',TextType::class)
-                ->add('blog',  CKEditorType::class, array('config' => array('uiColor' => '#ffffff', )))
                 ->add('image', TextType::class)
+                ->add('tag', TextType::class)
+                ->add('blog',  CKEditorType::class, array('config' => array('uiColor' => '#ffffff', )))
                 ->add('save', SubmitType::class, array('label' => 'Send'));
     }
 

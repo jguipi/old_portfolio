@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping\Index;
 /**
  * Blog
  *
- * @ORM\Table(name="blog", indexes={@Index(columns={"tags"},flags={"fulltext"})})
+ * @ORM\Table(name="blog")
  * @ORM\Entity(repositoryClass="JC\BlogBundle\Repository\BlogRepository")
  * @ORM\HasLifecycleCallbacks()
  */
@@ -47,9 +47,9 @@ class Blog
     protected $image;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string", length=300)
      */
-    protected $tags;
+    protected $tag;
 
     /**
      * @ORM\OneToMany(targetEntity="JC\BlogBundle\Entity\Tagss", mappedBy="blog")
@@ -218,29 +218,7 @@ class Blog
         return $this->image;
     }
 
-    /**
-     * Set tags
-     *
-     * @param string $tags
-     *
-     * @return Blog
-     */
-    public function setTags($tags)
-    {
-        $this->tags = $tags;
 
-        return $this;
-    }
-
-    /**
-     * Get tags
-     *
-     * @return string
-     */
-    public function getTags()
-    {
-        return $this->tags;
-    }
 
     /**
      * Set created
@@ -314,7 +292,8 @@ class Blog
      */
     public function setSlug($slug)
     {
-        $this->slug = $slug;
+        $slug2 = $this ->slugify($slug);
+        $this->slug = $slug2;
 
         return $this;
     }
@@ -357,26 +336,37 @@ class Blog
         return $text;
     }
 
+
     /**
-     * Set tagsList
+     * Add tagss
      *
-     * @param \JC\BlogBundle\Entity\Tagss $tagsList
+     * @param \JC\BlogBundle\Entity\Tagss $tagss
      *
      * @return Blog
      */
-    public function setTagsList(\JC\BlogBundle\Entity\Tagss $tagsList = null)
+    public function addTagss(\JC\BlogBundle\Entity\Tagss $tagss)
     {
-        $this->tags_list = $tagsList;
+        $this->tagss[] = $tagss;
 
         return $this;
     }
 
     /**
-     * Get tagsList
+     * Remove tagss
      *
-     * @return \JC\BlogBundle\Entity\Tagss
+     * @param \JC\BlogBundle\Entity\Tagss $tagss
      */
-    public function getTagsList()
+    public function removeTagss(\JC\BlogBundle\Entity\Tagss $tagss)
+    {
+        $this->tagss->removeElement($tagss);
+    }
+
+    /**
+     * Get tagss
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTagss()
     {
         return $this->tagss;
     }

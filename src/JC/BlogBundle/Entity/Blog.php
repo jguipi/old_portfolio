@@ -46,6 +46,10 @@ class Blog
      */
     protected $image;
 
+    /**
+     * @ORM\Column(type="string", length=300)
+     */
+    protected $tag;
 
     /**
      * @ORM\OneToMany(targetEntity="JC\BlogBundle\Entity\Tagss", mappedBy="blog")
@@ -80,8 +84,12 @@ class Blog
     {
         $this->comments = new ArrayCollection();
 
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
+        $timeZone  = new \DateTimeZone('America/Toronto');
+        $dateTime = new \DateTime();
+        $dateTime ->setTimezone($timeZone);
+
+        $this->setCreated($dateTime);
+        $this->setUpdated($dateTime);
     }
 
     /**
@@ -89,7 +97,11 @@ class Blog
      */
     public function setUpdatedValue()
     {
-        $this->setUpdated(new \DateTime());
+        $timeZone  = new \DateTimeZone('America/Toronto');
+        $dateTime = new \DateTime();
+        $dateTime ->setTimezone($timeZone);
+
+        $this->setUpdated($dateTime);
     }
 
 
@@ -365,5 +377,29 @@ class Blog
     public function getTagss()
     {
         return $this->tagss;
+    }
+
+    /**
+     * Set tag
+     *
+     * @param string $tag
+     *
+     * @return Blog
+     */
+    public function setTag($tag)
+    {
+        $this->tag = $tag;
+
+        return $this;
+    }
+
+    /**
+     * Get tag
+     *
+     * @return string
+     */
+    public function getTag()
+    {
+        return $this->tag;
     }
 }
