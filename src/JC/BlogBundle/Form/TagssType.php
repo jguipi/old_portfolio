@@ -7,9 +7,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
-class CommentType extends AbstractType
+class TagssType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -17,10 +16,7 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('user', TextType::class)
-            ->add('comment', TextareaType::class)
-            ->add('save', SubmitType::class, array('label' => 'Send'))
-        ;
+            ->add('value', TextType::class);
     }
     
     /**
@@ -29,7 +25,7 @@ class CommentType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'JC\BlogBundle\Entity\Comment'
+            'data_class' => 'JC\BlogBundle\Entity\Tagss'
         ));
     }
 
@@ -38,7 +34,7 @@ class CommentType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'jc_blogbundle_comment';
+        return 'jc_blogbundle_tagss';
     }
 
 

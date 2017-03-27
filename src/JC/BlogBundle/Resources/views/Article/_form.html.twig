@@ -1,0 +1,30 @@
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+<div>
+    {{ form_label(form.title) }}
+    {{ form_errors(form.title) }}
+    {{ form_widget(form.title) }}
+</div>
+
+<div>
+    {{ form_label(form.author) }}
+    {{ form_errors(form.author) }}
+    {{ form_widget(form.author) }}
+</div>
+<div>
+    {{ form_label(form.image) }}
+    {{ form_errors(form.image) }}
+    {{ form_widget(form.image) }}
+</div>
+<div>
+    {{ form_label(form.blog) }}
+    {{ form_errors(form.blog) }}
+    {{ form_widget(form.blog) }}
+</div>
+<div>
+    {{ form_widget(form.save) }}
+</div>
+
+{{ form_end(form) }}
+

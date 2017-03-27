@@ -9,18 +9,18 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
-class CommentType extends AbstractType
+class BlogType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder
-            ->add('user', TextType::class)
-            ->add('comment', TextareaType::class)
-            ->add('save', SubmitType::class, array('label' => 'Send'))
-        ;
+        $builder->add('title', TextType::class)
+                ->add('author',TextType::class)
+                ->add('blog',  TextareaType ::class)
+                ->add('image', TextType::class)
+                ->add('save', SubmitType::class, array('label' => 'Send'));
     }
     
     /**
@@ -29,7 +29,7 @@ class CommentType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'JC\BlogBundle\Entity\Comment'
+            'data_class' => 'JC\BlogBundle\Entity\Blog'
         ));
     }
 
@@ -38,7 +38,7 @@ class CommentType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'jc_blogbundle_comment';
+        return 'jc_blogbundle_blog';
     }
 
 

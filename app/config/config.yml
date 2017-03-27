@@ -6,18 +6,19 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: fr
+    locale: en
     jc_blog.comments.latest_comment_limit: 10
 
 framework:
     #esi:             ~
-    translator: ~
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
     form:            ~
-    csrf_protection: ~
+    csrf_protection:
+        enabled:  true
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
     templating:
@@ -99,6 +100,11 @@ fos_comment:
             thread: JC\BlogBundle\Entity\Thread
             vote: JC\BlogBundle\Entity\Vote
 
-
-
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: AppBundle\Entity\User
+    from_email:
+        address: "juste_g@hotmail.com"
+        sender_name: "Juste"
 
