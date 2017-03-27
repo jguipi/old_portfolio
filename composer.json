@@ -37,7 +37,8 @@
         "html2text/html2text":"~4.0",
         "friendsofsymfony/comment-bundle":"~2.0",
         "symfony/var-dumper":"~3.2",
-        "coresphere/console-bundle": "~0.5"
+        "coresphere/console-bundle": "~0.5",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
